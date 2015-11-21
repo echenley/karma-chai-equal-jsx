@@ -1,11 +1,11 @@
 language: node_js
 node_js:
-- '4.0.0'
+- 4.0.0
 deploy:
   provider: npm
   email: henleyedition@gmail.com
   api_key:
-    secure: Qb2NTbkRQPIFbDLMWNl2AzELVboWv2LQbjXkLAb3htpv3AFbbyDPBcPOuP24xlRer/UxnXvY6Thoi/mPQj1FJZ6RZd5KRzKhcUBgMRuxQ331wfed3GyCcEdQf8MDkVGnyPc06BiOQK3OX6pe2SrhDciYYDcYuCbyhVtJ7hOsU/W6RiizN8RGDCAFXlwn/TcevffIOLmiQatYf/0JRkswwqt1f7uueKHugywXhVo+mbZJeucVJN0fTcemvttggtABamFYi2/i7yzhOCm/bzy8oBL0nyEpIYeBqFPg9bObI/WGd/Hg6znTaA8B1DHAGC2FtWeUv1N3C7tKx3MYtvH+Rw+wd2ANdjs07F4tbq6R3K1u/naLc5mrx+s0CTjHFF39aFAz166a17OOHq713fdJKQnWD4/PdTZihTw/J63+XEDqSaKboSjnqioE3xAnpZr0uJWTGOQIK4t9SQCtGU6kl7139t4MRCTly5vGJrm+NPLSxQ/cKh06b/Hw0U2Hdajasvx0pLcJXhZNUNCHwPIHctgQBVaaYKqfcjHMFIDfus+dswg67FTZtfgu11j85B+BwA2VvxSnS0clo9X+gGGMWRVftRyqYy7ZtPs2PgPhM6xmtY2Qhu9c9TGupXHND7K5x9DyUxv7ZS447rEhOyeH53tzSUM47v2QtfKi23SXluQ=
+    secure: kwdAAWHxzl1l0wRrwgCwhqO55usa8Gd4/3tSY2pDYaeQrv/dmQM+VfTtoBkbM/7vCezG0gzCUxxd/wPDzE7C4IXGJlnuJTE+PN8tAt61L9Iyi0ezYuStBa5T3h1sZtznxdv4VZO46kNllJ41eMmrwiS5MrXWHxzufetb0qCBZUPSKmiz5TX08hKh65dsRuNxQntZxiE//K3nQohHPB5siMWHqFV41CO4p5dIJWQXnNrKCmC8MHO65dkjtPxTVquaOYEExpCk9zwun7zbMqq52OoeFNnmq3hZzzSoKdKnOtL1roLBYN5PYiXdsnCSAxRm0D+Op/WGC6Ke+x1iXbKHUICrvIsfn9qTZlmt//d5ar4UMql8TzhIzabS0Mdwq7rhkC5eV4L4UX7BZEu0KbbeiW3G2EGk3Ga7alvyvamlcVKFyAjtSnRDmlIMeFgoFc/s2fInY6f0cPZO4FZ4mrmEAJgMPxUlMx1ltZk93NRDocxIi3EcmYkFOr0r97hPyYE6dEyZ6P89ycmrvxLiYVxtMlx5dMc80+u2mSa3uMCvP48ylLSje+qf45xl6DRenLLah3xbjhp5Z+L4SXs3TeeZWYp0JNhk9fJsNuwLMvBl2AYcISuf17gGPoL42gBmpVJsfFJ1JdVM0fl8LZqL3PEvMMN0gYm8crPVXQZ6XlZimN0=
   on:
     tags: true
     all_branches: true
@@ -13,4 +13,4 @@ deploy:
 cache:
   bundler: true
   directories:
-    - node_modules
+  - node_modules
