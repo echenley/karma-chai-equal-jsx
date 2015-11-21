@@ -34,7 +34,7 @@ function framework(files) {
         files.unshift(createPattern(chaiPath));
     }
 
-    var chaiEqualJSXPath = path.resolve(require.resolve('chai-equal-jsx'), '/chai-equal-jsx.js');
+    var chaiEqualJSXPath = path.resolve(require.resolve('chai-equal-jsx'), './chai-equal-jsx.js');
     if (!isDuplicate(chaiEqualJSXPath)) {
         files.push(createPattern(chaiEqualJSXPath));
     }

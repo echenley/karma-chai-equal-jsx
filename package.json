@@ -3,7 +3,7 @@
   "description": "Karma plugin for chai-equal-jsx",
   "author": "Evan Henley <evan.henley@gmail.com> (http://henleyedition.com)",
   "license": "MIT",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.js",
   "repository": {
     "type": "git",
