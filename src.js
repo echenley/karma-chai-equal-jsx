@@ -1,0 +1,1 @@
+chai.use(require('chai-equal-jsx'));
