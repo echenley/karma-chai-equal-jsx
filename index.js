@@ -9,6 +9,12 @@ function createPattern(file) {
     };
 }
 
+function endsWith(substr) {
+    return function(str) {
+        return str.indexOf(substr) >= 0 && str.indexOf(substr) === (str.length - substr.length);
+    };
+};
+
 function _isDuplicate(files, file) {
     var result = false;
     for (var i = 0; i < files.length; i++) {
