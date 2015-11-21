@@ -9,10 +9,29 @@ function createPattern(file) {
     };
 }
 
+function _isDuplicate(files, file) {
+    var result = false;
+    for (var i = 0; i < files.length; i++) {
+        var pattern = files[i].pattern
+        result = result || endsWith(path.relative(__dirname, file))(pattern);
+    }
+    return result;
+}
+
 function framework(files) {
-    files.unshift(createPattern(__dirname + '/chai-adapter.js'));
-    files.unshift(createPattern(path.dirname(require.resolve('chai')) + '/chai.js'));
-    files.unshift(createPattern(path.dirname(require.resolve('chai-equal-jsx')) + '/chai-equal-jsx.js'));
+    var isDuplicate = _isDuplicate.bind(this, files);
+
+    files.unshift(createPattern(path.join(__dirname, 'chai-adapter.js')));
+
+    var chaiPath = path.resolve(require.resolve('chai'), '../chai.js');
+    if (!isDuplicate(chaiPath)) {
+        files.unshift(createPattern(chaiPath));
+    }
+
+    var chaiEqualJSXPath = path.resolve(require.resolve('chai-equal-jsx'), '/chai-equal-jsx.js');
+    if (!isDuplicate(chaiEqualJSXPath)) {
+        files.push(createPattern(chaiEqualJSXPath));
+    }
 }
 
 framework.$inject = ['config.files'];
