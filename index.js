@@ -27,6 +27,7 @@ function _isDuplicate(files, file) {
 function framework(files) {
     var isDuplicate = _isDuplicate.bind(this, files);
 
+    // adapter
     files.unshift(createPattern(path.join(__dirname, 'chai-adapter.js')));
 
     // Chai
@@ -35,14 +36,8 @@ function framework(files) {
         files.unshift(createPattern(chaiPath));
     }
 
-    // react-element-to-jsx-string
-    var reactElementToJSXStringPath = require.resolve('react-element-to-jsx-string');
-    if (!isDuplicate(reactElementToJSXStringPath)) {
-        files.push(createPattern(reactElementToJSXStringPath));
-    }
-
     // chai-equal-jsx
-    var chaiEqualJSXPath = require.resolve('chai-equal-jsx');
+    var chaiEqualJSXPath = path.join(__dirname, 'dist.js');
     if (!isDuplicate(chaiEqualJSXPath)) {
         files.push(createPattern(chaiEqualJSXPath));
     }

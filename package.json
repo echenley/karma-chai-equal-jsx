@@ -25,7 +25,16 @@
   ],
   "peerDependencies": {
     "karma": ">=0.6",
-    "chai": "*",
-    "chai-equal-jsx": "*"
+    "chai": "*"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "chai-equal-jsx": "^1.0.8",
+    "react": "^0.14.3",
+    "uglify-js": "^2.6.1"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "./node_modules/.bin/browserify -r chai-equal-jsx | ./node_modules/.bin/uglifyjs -c > dist.js"
   }
 }

@@ -1,5 +1,3 @@
-.babelrc
-.eslintrc
 .gitignore
 .travis.yml
 test/
