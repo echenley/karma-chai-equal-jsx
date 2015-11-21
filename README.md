@@ -3,8 +3,7 @@
 [![NPM version](http://img.shields.io/npm/v/karma-chai-equal-jsx.svg?style=flat-square)](https://www.npmjs.org/package/karma-chai-equal-jsx)
 [![Build Status](https://img.shields.io/travis/echenley/karma-chai-equal-jsx.svg?branch=master)](https://travis-ci.org/echenley/karma-chai-equal-jsx)
 [![Build Status](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
-[![Downloads](https://img.shields.io/npm/dm/karma-
-chai-equal-jsx.svg?style=flat-square)](http://npm-stat.com/charts.html?package=karma-chai-equal-jsx)
+[![Downloads](https://img.shields.io/npm/dm/karma-chai-equal-jsx.svg?style=flat-square)](http://npm-stat.com/charts.html?package=karma-chai-equal-jsx)
 
 Adds `equalJSX` and `includeJSX` methods to chai assertions. Uses Algolia's [react-element-to-jsx-string](https://github.com/algolia/react-element-to-jsx-string) under the hood.
 
