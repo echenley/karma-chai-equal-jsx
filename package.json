@@ -27,9 +27,5 @@
     "karma": ">=0.6",
     "chai": "*",
     "chai-equal-jsx": "*"
-  },
-  "scripts": {
-    "test": "./node_modules/.bin/mocha --opts test/mocha.opts && eslint .",
-    "test:watch": "./node_modules/.bin/mocha --opts test/mocha.opts --watch --reporter min"
   }
 }
