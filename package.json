@@ -1,0 +1,35 @@
+{
+  "name": "karma-chai-equal-jsx",
+  "description": "Karma plugin for chai-equal-jsx",
+  "author": "Evan Henley <evan.henley@gmail.com> (http://henleyedition.com)",
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echenley/karma-chai-equal-jsx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/echenley/karma-chai-equal-jsx/issues"
+  },
+  "homepage": "https://github.com/echenley/karma-chai-equal-jsx#readme",
+  "keywords": [
+    "assert",
+    "assertion",
+    "chai",
+    "expect",
+    "jsx",
+    "react",
+    "should",
+    "test"
+  ],
+  "peerDependencies": {
+    "karma": ">=0.6",
+    "chai": "*",
+    "chai-equal-jsx": "*"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --opts test/mocha.opts && eslint .",
+    "test:watch": "./node_modules/.bin/mocha --opts test/mocha.opts --watch --reporter min"
+  }
+}
