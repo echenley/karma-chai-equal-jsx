@@ -29,11 +29,19 @@ function framework(files) {
 
     files.unshift(createPattern(path.join(__dirname, 'chai-adapter.js')));
 
+    // Chai
     var chaiPath = path.resolve(require.resolve('chai'), '../chai.js');
     if (!isDuplicate(chaiPath)) {
         files.unshift(createPattern(chaiPath));
     }
 
+    // react-element-to-jsx-string
+    var reactElementToJSXStringPath = require.resolve('react-element-to-jsx-string');
+    if (!isDuplicate(reactElementToJSXStringPath)) {
+        files.push(createPattern(reactElementToJSXStringPath));
+    }
+
+    // chai-equal-jsx
     var chaiEqualJSXPath = require.resolve('chai-equal-jsx');
     if (!isDuplicate(chaiEqualJSXPath)) {
         files.push(createPattern(chaiEqualJSXPath));
