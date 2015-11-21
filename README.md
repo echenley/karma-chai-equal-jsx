@@ -16,6 +16,7 @@ npm install -D karma-chai-equal-jsx
 ## Setup
 
 ```javascript
+// karma.conf.js
 module.exports = function(config) {
     config.set({
         // ...etc.
