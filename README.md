@@ -5,6 +5,8 @@
 [![Build Status](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
 [![Downloads](https://img.shields.io/npm/dm/karma-chai-equal-jsx.svg?style=flat-square)](http://npm-stat.com/charts.html?package=karma-chai-equal-jsx)
 
+*Disclaimer: This repo is a work in progress. For now, I'd recommend importing [the chai-equal-jsx plugin](https://github.com/echenley/chai-equal-jsx) into your test bundle directly, [like so](https://github.com/echenley/react-news/blob/master/test/test.bundle.js).*
+
 Adds `equalJSX` and `includeJSX` methods to chai assertions. Uses Algolia's [react-element-to-jsx-string](https://github.com/algolia/react-element-to-jsx-string) under the hood.
 
 ## Installation
